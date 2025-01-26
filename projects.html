@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="All the webpages, websites and applications I've created.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/page.css" />
+  <link rel="stylesheet" href="static/css/projects.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Diwi: Projects</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main-content">Skip to main content</a>
+  <nav class="visible">
+    <div class="container">
+      
+      <div class="nav-links">
+        <a href="about.html" class="link">About</a>
+        <a href="projects.html" class="link active">Projects</a>
+        <a href="qualifications.html" class="link">Qualifications</a>
+        <a href="contactme.html" class="link active">Contact Me</a>
+        <div class="social-media">
+          <a href="https://github.com/DiwiMalik" title="Github">
+                        <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/diwi-malik-/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger">
+
+        </button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i aria-hidden="true" class="demo-icon icon-cog"></i>
+          <span class="visually-hidden">Select a color scheme</span>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main id="main">
+    <section class="container">
+      <h1 class="section-title">Projects <span class="title-icon">&#128187;</span></h1>
+      <p class="section-subtitle">
+        Over the course of my college journey, I've built several websites and applications. These are
+        some of them:
+      </p>
+    </section>
+    <!-- <section id="websites" class="container">
+      <h2 class="subsection-title">
+        Webpages (6)
+      </h2>
+      <div class="main-text project-scroll">
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/hobbyist.png" width="720" height="340" alt="Hobbyist Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Hobbyist</h3>
+            <p>A site for recording your hobbies</p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://my-hobbyist.herokuapp.com/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/Jemimaabu/hobbyist-app" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/minimalism.png" width="720" height="340" alt="Minimalist Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Minimalism Is Art</h3>
+            <p>A minimalist art gallery site</p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://minimalism-is-art.herokuapp.com/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/jemimaabu/minimalism-is-art" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/trainella.png" width="720" height="340" alt="Trainella Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Trainella</h3>
+            <p>A yoga website</p>
+            <ul class="project-tags">
+              <li>WordPress</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://trainella.com" target="_blank" rel="noopener">visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/cybercamp.png" width="720" height="340" alt="Cybercamp Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Cybercamp</h3>
+            <p>A kids' summer camp website</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://unilagconsult.com.ng/cybercamp/" target="_blank" rel="noopener">visit
+                site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="apps" class="container">
+      <h2 class="subsection-title">
+        Web Apps 
+      </h2>
+      <div class="main-text project-scroll">
+        <!-- <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/gridster.png" width="720" height="340" alt="A grid game website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Gridster</h3>
+            <p>A 2D JavaScript grid game</p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://gridster-demo.herokuapp.com/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/jemimaabu/gridster" target="_blank" rel="noopener">source code</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/upkaar.png" width="720" height="340" alt="Upkaar">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Upkaar</h3>
+            <ul>
+              <li>Created ”Upkaar,” a full-stack donation website, and integrated Stripe for secure donations.</li>
+            </ul>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Express js</li>
+              <li>MySQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/DiwiMalik/upkaar" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/ui ux.jpg" width="720" height="340"
+              alt="A random gradient generator">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">MOTO Makeover</h3>
+            <p> A 3D Unity app for customizing both interior and exterior of various car models.</p>
+            <ul class="project-tags">
+              <li>Unity</li>
+              <li>MAYA</li>
+              <li>C#</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/DiwiMalik/moto-makeover" target="_blank" rel="noopener">Source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/projects/weather.png" width="720" height="340" alt="A word processort">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">SkyInsight</h3>
+            <p>S weather application using ReactJs and leveraged the OpenWeather API.</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>ReactJs</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/DiwiMalik/SkyInsight" target="_blank" rel="noopener">Source
+                code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="page-nav container">
+    <a href="about.html">&#8592; About</a>
+    <a href="qualifications.html">Qualifications &#8594;</a>
+  </div>
+  <div class="wave-border top">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;" role="presentation">
+      <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: var(--shade-100)"></path>
+      <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+        style="stroke: var(--neon-color);fill: none;"></path>
+    </svg>
+  </div>
+  <footer>
+    
+    <div class="container">
+      <div class="social-media">
+        <a href="https://github.com/DiwiMalik" title="Github">
+                      <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/diwi-malik-/" title="LinkedIn">
+          <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; Designed & built by <a href="https://www.jemimaabu.com">Diwi</a> <span
+          class="heart">&hearts;</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+
+</html>
